@@ -6,28 +6,28 @@ I work on AI and data infrastructure, and I spend a lot of my time fixing bugs i
 
 ## Open-source contributions
 
-**16 merged PRs** · **74 under review** · **35 bug reports filed**, across Google, Apple MLX, AWS, NVIDIA, Tesla, Ollama and Anthropic projects.
+**16 merged PRs** · **74 under review** · **35 issues filed**, across 9 open-source projects from Google, Apple MLX, AWS, NVIDIA, Tesla, Ollama and Anthropic.
 
 ### Merged
 
 | Project | PR | What it fixed |
 |---|---|---|
-| **Google ADK** | [#7663](https://github.com/google/adk-python/pull/7663) ([b981250](https://github.com/google/adk-python/commit/b981250)) | `FirestoreSessionService` returned every user's sessions for an empty user id |
-| | [#7729](https://github.com/google/adk-python/pull/7729) ([cbe786b](https://github.com/google/adk-python/commit/cbe786b)) | An expired OAuth2 token with no refresh token crashed the tool |
-| | [#7665](https://github.com/google/adk-python/pull/7665) ([37b1ab3](https://github.com/google/adk-python/commit/37b1ab3)) | Failed MCP tool results reached Claude marked as successes |
-| | [#7476](https://github.com/google/adk-python/pull/7476) ([f5db310](https://github.com/google/adk-python/commit/f5db310)) | `ApigeeLlm` dropped text sent alongside a function response |
-| | [#7479](https://github.com/google/adk-python/pull/7479) ([019387c](https://github.com/google/adk-python/commit/019387c)) | Artifacts saved in agent callbacks were never recorded |
-| | [#7499](https://github.com/google/adk-python/pull/7499) ([a6ed859](https://github.com/google/adk-python/commit/a6ed859)) | A workflow `JoinNode` inside a loop fired with the previous iteration's outputs |
-| | [#7991](https://github.com/google/adk-python/pull/7991) ([ba142cf](https://github.com/google/adk-python/commit/ba142cf)) | Resuming a workflow re-ran a node that was still waiting for output |
+| **Google ADK** | [#7991](https://github.com/google/adk-python/pull/7991) ([ba142cf](https://github.com/google/adk-python/commit/ba142cf)) | Resuming a workflow re-ran a node that was still waiting for output |
+|  | [#7729](https://github.com/google/adk-python/pull/7729) ([cbe786b](https://github.com/google/adk-python/commit/cbe786b)) | An expired OAuth2 token with no refresh token crashed the tool |
+|  | [#7663](https://github.com/google/adk-python/pull/7663) ([b981250](https://github.com/google/adk-python/commit/b981250)) | `FirestoreSessionService` returned every user's sessions for an empty user id |
+|  | [#7665](https://github.com/google/adk-python/pull/7665) ([37b1ab3](https://github.com/google/adk-python/commit/37b1ab3)) | Failed MCP tool results reached Claude marked as successes |
+|  | [#7499](https://github.com/google/adk-python/pull/7499) ([a6ed859](https://github.com/google/adk-python/commit/a6ed859)) | A workflow `JoinNode` inside a loop fired with the previous iteration's outputs |
+|  | [#7479](https://github.com/google/adk-python/pull/7479) ([019387c](https://github.com/google/adk-python/commit/019387c)) | Artifacts saved in agent callbacks were never recorded |
+|  | [#7476](https://github.com/google/adk-python/pull/7476) ([f5db310](https://github.com/google/adk-python/commit/f5db310)) | `ApigeeLlm` dropped text sent alongside a function response |
 | **Apple MLX** | [#4663](https://github.com/ml-explore/mlx/pull/4663) | `layer_norm` and SDPA fallbacks ignored the caller's stream (C++ core) |
-| **MLX-VLM** | [#2484](https://github.com/Neywa-Labs/mlx-vlm/pull/2484) | The OpenAI-compatible server ignored `max_completion_tokens` |
-| | [#2486](https://github.com/Neywa-Labs/mlx-vlm/pull/2486) | The Anthropic-compatible stream sent text past `stop_sequences` |
-| | [#2492](https://github.com/Neywa-Labs/mlx-vlm/pull/2492) | Multi-turn Phi-3-vision / Phi-4-MM chats with images crashed |
-| | [#2473](https://github.com/Neywa-Labs/mlx-vlm/pull/2473) | The Eagle3 speculative-decoding drafter failed without its own embeddings |
-| | [#2476](https://github.com/Neywa-Labs/mlx-vlm/pull/2476) | PaddleOCR-VL LoRA training didn't freeze the vision encoder and rejected packed patches |
-| | [#2479](https://github.com/Neywa-Labs/mlx-vlm/pull/2479) | Documented video input for `apply_chat_template` |
-| **NVIDIA NeMo Agent Toolkit** | [#2476](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2476) | MCP service-account tokens had a timezone-naive expiry, so no credentials were sent |
+| **MLX-VLM** | [#2473](https://github.com/Neywa-Labs/mlx-vlm/pull/2473) | The Eagle3 speculative-decoding drafter failed without its own embeddings |
+|  | [#2486](https://github.com/Neywa-Labs/mlx-vlm/pull/2486) | The Anthropic-compatible stream sent text past `stop_sequences` |
+|  | [#2476](https://github.com/Neywa-Labs/mlx-vlm/pull/2476) | PaddleOCR-VL LoRA training didn't freeze the vision encoder and rejected packed patches |
+|  | [#2492](https://github.com/Neywa-Labs/mlx-vlm/pull/2492) | Multi-turn Phi-3-vision / Phi-4-MM chats with images crashed |
+|  | [#2484](https://github.com/Neywa-Labs/mlx-vlm/pull/2484) | The OpenAI-compatible server ignored `max_completion_tokens` |
+|  | [#2479](https://github.com/Neywa-Labs/mlx-vlm/pull/2479) | Documented video input for `apply_chat_template` |
 | **AWS Strands Agents** | [#5016](https://github.com/strands-agents/harness-sdk/pull/5016) | Warnings were logged for every earlier message on every request (N² log lines) |
+| **NVIDIA** | [#2476](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2476) | MCP service-account tokens had a timezone-naive expiry, so no credentials were sent |
 
 Google ADK merges through Copybara, so those PRs show as "Closed" on GitHub. The commit links point to the merged change.
 
@@ -35,18 +35,18 @@ Google ADK merges through Copybara, so those PRs show as "Closed" on GitHub. The
 
 | Project | PRs | Highlights |
 |---|---|---|
-| **AWS SageMaker Python SDK** | [45](https://github.com/aws/sagemaker-python-sdk/pulls?q=is%3Apr+author%3AAkshayShah03) | Bugs in the v3 SDK across training, serving, pipelines and core, such as a KMS key sent as a customer encryption key, `mpirun -np` given the wrong rank count, and `AsyncPredictor` hanging instead of timing out |
-| **Ollama** | [10](https://github.com/ollama/ollama/pulls?q=is%3Apr+author%3AAkshayShah03) | Responses API text dropped next to tool calls, blobs not pruned after pull or copy, a race in blob-download cancellation |
-| **Tesla** | [7](https://github.com/search?q=is%3Apr+author%3AAkshayShah03+org%3Ateslamotors&type=pullrequests) | [vehicle-command #528](https://github.com/teslamotors/vehicle-command/pull/528) wake-up polling, [#537](https://github.com/teslamotors/vehicle-command/pull/537) cabin overheat level; [fleet-telemetry #581](https://github.com/teslamotors/fleet-telemetry/pull/581) Kafka client errors, [#585](https://github.com/teslamotors/fleet-telemetry/pull/585) statsd tags; [fixed-containers #246](https://github.com/teslamotors/fixed-containers/pull/246) |
-| **MLX-VLM** | [4](https://github.com/Neywa-Labs/mlx-vlm/pulls?q=is%3Apr+author%3AAkshayShah03+is%3Aopen) | Qwen3-VL embedding position IDs, GLM-OCR image input, pooling options |
-| **Google ADK** | [2](https://github.com/google/adk-python/pulls?q=is%3Apr+author%3AAkshayShah03+is%3Aopen) | Workflow resume replay, keeping finished parallel tool results on abort |
-| **Anthropic Claude Agent SDK** | [2](https://github.com/anthropics/claude-agent-sdk-python/pulls?q=is%3Apr+author%3AAkshayShah03) | A client disconnect race, recursive TypedDict schemas for MCP tools |
-| **NVIDIA** | 2 | [garak #2355](https://github.com/NVIDIA/garak/pull/2355) reproducible seeded prompts, [warp #2147](https://github.com/NVIDIA/warp/pull/2147) empty trailing slices |
-| **AWS Strands Agents** | [2](https://github.com/strands-agents/harness-sdk/pulls?q=is%3Apr+author%3AAkshayShah03+is%3Aopen) | Contributor setup docs |
+| **AWS SageMaker Python SDK** | [45](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Aaws%2Fsagemaker-python-sdk+author%3AAkshayShah03&type=pullrequests) | Bugs in the v3 SDK across training, serving, pipelines and core, such as a KMS key sent as a customer encryption key, `mpirun -np` given the wrong rank count, and `AsyncPredictor` hanging instead of timing out |
+| **Ollama** | [10](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Aollama%2Follama+author%3AAkshayShah03&type=pullrequests) | Responses API text dropped next to tool calls, blobs not pruned after pull or copy, a race in blob-download cancellation |
+| **Tesla** | [7](https://github.com/search?q=is%3Apr+is%3Aopen+org%3Ateslamotors+author%3AAkshayShah03&type=pullrequests) | Vehicle wake-up polling, cabin overheat protection level, Kafka client errors, statsd tags, `FixedBitset` construction |
+| **MLX-VLM** | [4](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3ANeywa-Labs%2Fmlx-vlm+author%3AAkshayShah03&type=pullrequests) | Qwen3-VL embedding position IDs, GLM-OCR image input, pooling options |
+| **Google ADK** | [2](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Agoogle%2Fadk-python+author%3AAkshayShah03&type=pullrequests) | Workflow resume replay, keeping finished parallel tool results on abort |
+| **AWS Strands Agents** | [2](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Astrands-agents%2Fharness-sdk+author%3AAkshayShah03&type=pullrequests) | Contributor setup docs |
+| **NVIDIA** | [2](https://github.com/search?q=is%3Apr+is%3Aopen+org%3ANVIDIA+author%3AAkshayShah03&type=pullrequests) | Reproducible seeded prompts in garak, empty trailing slices in Warp |
+| **Anthropic Claude Agent SDK** | [2](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Aanthropics%2Fclaude-agent-sdk-python+author%3AAkshayShah03&type=pullrequests) | A client disconnect race, recursive TypedDict schemas for MCP tools |
 
 ### Issues and triage
 
-- Filed 35 bug reports with reproductions: [Google ADK](https://github.com/google/adk-python/issues?q=author%3AAkshayShah03) (14), [MLX-VLM](https://github.com/Neywa-Labs/mlx-vlm/issues?q=author%3AAkshayShah03) (4), [NVIDIA](https://github.com/search?q=is%3Aissue+author%3AAkshayShah03+org%3ANVIDIA&type=issues) (4), [Ollama](https://github.com/ollama/ollama/issues?q=author%3AAkshayShah03) (3), [Tesla](https://github.com/teslamotors/fleet-telemetry/issues?q=author%3AAkshayShah03) (3), [Strands](https://github.com/strands-agents/harness-sdk/issues?q=author%3AAkshayShah03) (3), and others.
+- Filed 35 issues (bug reports with reproductions, and proposals): [Google ADK](https://github.com/search?q=is%3Aissue+repo%3Agoogle%2Fadk-docs+repo%3Agoogle%2Fadk-python+author%3AAkshayShah03&type=issues) (15), [MLX-VLM](https://github.com/search?q=is%3Aissue+repo%3ANeywa-Labs%2Fmlx-vlm+author%3AAkshayShah03&type=issues) (4), [NVIDIA](https://github.com/search?q=is%3Aissue+org%3ANVIDIA+author%3AAkshayShah03&type=issues) (4), [AWS Strands Agents](https://github.com/search?q=is%3Aissue+repo%3Astrands-agents%2Fharness-sdk+author%3AAkshayShah03&type=issues) (3), [Tesla](https://github.com/search?q=is%3Aissue+org%3Ateslamotors+author%3AAkshayShah03&type=issues) (3), [Ollama](https://github.com/search?q=is%3Aissue+repo%3Aollama%2Follama+author%3AAkshayShah03&type=issues) (3), [Anthropic Claude Agent SDK](https://github.com/search?q=is%3Aissue+repo%3Aanthropics%2Fclaude-agent-sdk-python+author%3AAkshayShah03&type=issues) (2), [MCP Python SDK](https://github.com/search?q=is%3Aissue+repo%3Amodelcontextprotocol%2Fpython-sdk+author%3AAkshayShah03&type=issues) (1).
 - Reproduced and triaged auth bugs in the [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk), and reviewed a maintainer PR there.
 
 ## Projects
@@ -62,4 +62,4 @@ Google ADK merges through Copybara, so those PRs show as "Closed" on GitHub. The
 | [**streaming-lakehouse-optimizer**](https://github.com/AkshayShah03/streaming-lakehouse-optimizer) | Postgres → Debezium → Kafka → Flink → Iceberg, with a learned layout optimizer |
 | [**incremental-vector-pipeline**](https://github.com/AkshayShah03/incremental-vector-pipeline) | CDC-driven re-embedding of only the chunks that changed, with a versioned store and instant model rollback |
 
-<sub>Counts as of November 2026.</sub>
+<sub>Updated automatically from GitHub on November 7, 2026.</sub>

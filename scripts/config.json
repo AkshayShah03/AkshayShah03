@@ -1,0 +1,45 @@
+{
+  "user": "AkshayShah03",
+  "exclude_orgs": ["STAT624F25"],
+  "orgs_line": "Google, Apple MLX, AWS, NVIDIA, Tesla, Ollama and Anthropic",
+  "projects": [
+    {"name": "Google ADK", "repos": ["google/adk-python", "google/adk-docs"]},
+    {"name": "Apple MLX", "repos": ["ml-explore/mlx"]},
+    {"name": "MLX-VLM", "repos": ["Neywa-Labs/mlx-vlm", "Blaizzy/mlx-vlm"]},
+    {"name": "AWS SageMaker Python SDK", "repos": ["aws/sagemaker-python-sdk"]},
+    {"name": "AWS Strands Agents", "repos": ["strands-agents/harness-sdk", "strands-agents/sdk-python"]},
+    {"name": "NVIDIA", "orgs": ["NVIDIA"]},
+    {"name": "Tesla", "orgs": ["teslamotors"]},
+    {"name": "Ollama", "repos": ["ollama/ollama"]},
+    {"name": "Anthropic Claude Agent SDK", "repos": ["anthropics/claude-agent-sdk-python"]},
+    {"name": "MCP Python SDK", "repos": ["modelcontextprotocol/python-sdk"]}
+  ],
+  "descriptions": {
+    "google/adk-python#7663": "`FirestoreSessionService` returned every user's sessions for an empty user id",
+    "google/adk-python#7729": "An expired OAuth2 token with no refresh token crashed the tool",
+    "google/adk-python#7665": "Failed MCP tool results reached Claude marked as successes",
+    "google/adk-python#7476": "`ApigeeLlm` dropped text sent alongside a function response",
+    "google/adk-python#7479": "Artifacts saved in agent callbacks were never recorded",
+    "google/adk-python#7499": "A workflow `JoinNode` inside a loop fired with the previous iteration's outputs",
+    "google/adk-python#7991": "Resuming a workflow re-ran a node that was still waiting for output",
+    "ml-explore/mlx#4663": "`layer_norm` and SDPA fallbacks ignored the caller's stream (C++ core)",
+    "Neywa-Labs/mlx-vlm#2484": "The OpenAI-compatible server ignored `max_completion_tokens`",
+    "Neywa-Labs/mlx-vlm#2486": "The Anthropic-compatible stream sent text past `stop_sequences`",
+    "Neywa-Labs/mlx-vlm#2492": "Multi-turn Phi-3-vision / Phi-4-MM chats with images crashed",
+    "Neywa-Labs/mlx-vlm#2473": "The Eagle3 speculative-decoding drafter failed without its own embeddings",
+    "Neywa-Labs/mlx-vlm#2476": "PaddleOCR-VL LoRA training didn't freeze the vision encoder and rejected packed patches",
+    "Neywa-Labs/mlx-vlm#2479": "Documented video input for `apply_chat_template`",
+    "NVIDIA/NeMo-Agent-Toolkit#2476": "MCP service-account tokens had a timezone-naive expiry, so no credentials were sent",
+    "strands-agents/harness-sdk#5016": "Warnings were logged for every earlier message on every request (N² log lines)"
+  },
+  "highlights": {
+    "AWS SageMaker Python SDK": "Bugs in the v3 SDK across training, serving, pipelines and core, such as a KMS key sent as a customer encryption key, `mpirun -np` given the wrong rank count, and `AsyncPredictor` hanging instead of timing out",
+    "Ollama": "Responses API text dropped next to tool calls, blobs not pruned after pull or copy, a race in blob-download cancellation",
+    "Tesla": "Vehicle wake-up polling, cabin overheat protection level, Kafka client errors, statsd tags, `FixedBitset` construction",
+    "MLX-VLM": "Qwen3-VL embedding position IDs, GLM-OCR image input, pooling options",
+    "Google ADK": "Workflow resume replay, keeping finished parallel tool results on abort",
+    "Anthropic Claude Agent SDK": "A client disconnect race, recursive TypedDict schemas for MCP tools",
+    "NVIDIA": "Reproducible seeded prompts in garak, empty trailing slices in Warp",
+    "AWS Strands Agents": "Contributor setup docs"
+  }
+}
