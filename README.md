@@ -6,7 +6,7 @@ I work on AI and data infrastructure, and I spend a lot of my time fixing bugs i
 
 ## Open-source contributions
 
-**16 merged PRs** · **74 under review** · **35 issues filed**, across 9 open-source projects from Google, Apple MLX, AWS, NVIDIA, Tesla, Ollama and Anthropic.
+**16 merged PRs** · **71 under review** · **36 issues filed**, across 9 open-source projects from Google, Apple MLX, AWS, NVIDIA, Tesla, Ollama and Anthropic.
 
 ### Merged
 
@@ -35,7 +35,7 @@ Google ADK merges through Copybara, so those PRs show as "Closed" on GitHub. The
 
 | Project | PRs | Highlights |
 |---|---|---|
-| **AWS SageMaker Python SDK** | [45](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Aaws%2Fsagemaker-python-sdk+author%3AAkshayShah03&type=pullrequests) | Bugs in the v3 SDK across training, serving, pipelines and core, such as a KMS key sent as a customer encryption key, `mpirun -np` given the wrong rank count, and `AsyncPredictor` hanging instead of timing out |
+| **AWS SageMaker Python SDK** | [42](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Aaws%2Fsagemaker-python-sdk+author%3AAkshayShah03&type=pullrequests) | Bugs in the v3 SDK across training, serving, pipelines and core, such as a KMS key sent as a customer encryption key, `mpirun -np` given the wrong rank count, and `AsyncPredictor` hanging instead of timing out |
 | **Ollama** | [10](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Aollama%2Follama+author%3AAkshayShah03&type=pullrequests) | Responses API text dropped next to tool calls, blobs not pruned after pull or copy, a race in blob-download cancellation |
 | **Tesla** | [7](https://github.com/search?q=is%3Apr+is%3Aopen+org%3Ateslamotors+author%3AAkshayShah03&type=pullrequests) | Vehicle wake-up polling, cabin overheat protection level, Kafka client errors, statsd tags, `FixedBitset` construction |
 | **MLX-VLM** | [4](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3ANeywa-Labs%2Fmlx-vlm+author%3AAkshayShah03&type=pullrequests) | Qwen3-VL embedding position IDs, GLM-OCR image input, pooling options |
@@ -46,7 +46,7 @@ Google ADK merges through Copybara, so those PRs show as "Closed" on GitHub. The
 
 ### Issues and triage
 
-- Filed 35 issues (bug reports with reproductions, and proposals): [Google ADK](https://github.com/search?q=is%3Aissue+repo%3Agoogle%2Fadk-docs+repo%3Agoogle%2Fadk-python+author%3AAkshayShah03&type=issues) (15), [MLX-VLM](https://github.com/search?q=is%3Aissue+repo%3ANeywa-Labs%2Fmlx-vlm+author%3AAkshayShah03&type=issues) (4), [NVIDIA](https://github.com/search?q=is%3Aissue+org%3ANVIDIA+author%3AAkshayShah03&type=issues) (4), [AWS Strands Agents](https://github.com/search?q=is%3Aissue+repo%3Astrands-agents%2Fharness-sdk+author%3AAkshayShah03&type=issues) (3), [Tesla](https://github.com/search?q=is%3Aissue+org%3Ateslamotors+author%3AAkshayShah03&type=issues) (3), [Ollama](https://github.com/search?q=is%3Aissue+repo%3Aollama%2Follama+author%3AAkshayShah03&type=issues) (3), [Anthropic Claude Agent SDK](https://github.com/search?q=is%3Aissue+repo%3Aanthropics%2Fclaude-agent-sdk-python+author%3AAkshayShah03&type=issues) (2), [MCP Python SDK](https://github.com/search?q=is%3Aissue+repo%3Amodelcontextprotocol%2Fpython-sdk+author%3AAkshayShah03&type=issues) (1).
+- Filed 36 issues (bug reports with reproductions, and proposals): [Google ADK](https://github.com/search?q=is%3Aissue+repo%3Agoogle%2Fadk-docs+repo%3Agoogle%2Fadk-python+author%3AAkshayShah03&type=issues) (16), [MLX-VLM](https://github.com/search?q=is%3Aissue+repo%3ANeywa-Labs%2Fmlx-vlm+author%3AAkshayShah03&type=issues) (4), [NVIDIA](https://github.com/search?q=is%3Aissue+org%3ANVIDIA+author%3AAkshayShah03&type=issues) (4), [AWS Strands Agents](https://github.com/search?q=is%3Aissue+repo%3Astrands-agents%2Fharness-sdk+author%3AAkshayShah03&type=issues) (3), [Tesla](https://github.com/search?q=is%3Aissue+org%3Ateslamotors+author%3AAkshayShah03&type=issues) (3), [Ollama](https://github.com/search?q=is%3Aissue+repo%3Aollama%2Follama+author%3AAkshayShah03&type=issues) (3), [Anthropic Claude Agent SDK](https://github.com/search?q=is%3Aissue+repo%3Aanthropics%2Fclaude-agent-sdk-python+author%3AAkshayShah03&type=issues) (2), [MCP Python SDK](https://github.com/search?q=is%3Aissue+repo%3Amodelcontextprotocol%2Fpython-sdk+author%3AAkshayShah03&type=issues) (1).
 - Reproduced and triaged auth bugs in the [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk), and reviewed a maintainer PR there.
 
 ## Projects
@@ -62,4 +62,4 @@ Google ADK merges through Copybara, so those PRs show as "Closed" on GitHub. The
 | [**streaming-lakehouse-optimizer**](https://github.com/AkshayShah03/streaming-lakehouse-optimizer) | Postgres → Debezium → Kafka → Flink → Iceberg, with a learned layout optimizer |
 | [**incremental-vector-pipeline**](https://github.com/AkshayShah03/incremental-vector-pipeline) | CDC-driven re-embedding of only the chunks that changed, with a versioned store and instant model rollback |
 
-<sub>Updated automatically from GitHub on November 8, 2026.</sub>
+<sub>Updated automatically from GitHub on November 9, 2026.</sub>
