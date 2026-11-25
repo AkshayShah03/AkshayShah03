@@ -6,7 +6,7 @@ I work on AI and data infrastructure, and I spend a lot of my time fixing bugs i
 
 ## Open-source contributions
 
-**16 merged PRs** · **75 under review** · **46 issues filed**, across 10 open-source projects from Google, Apple MLX, AWS, NVIDIA, Tesla, Ollama and Anthropic.
+**16 merged PRs** · **76 under review** · **46 issues filed**, across 11 open-source projects from Google, Apple MLX, AWS, NVIDIA, Tesla, Ollama and Anthropic.
 
 ### Merged
 
@@ -43,6 +43,7 @@ Google ADK merges through Copybara, so those PRs show as "Closed" on GitHub. The
 | **AWS Strands Agents** | [2](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Astrands-agents%2Fharness-sdk+author%3AAkshayShah03&type=pullrequests) | Contributor setup docs |
 | **NVIDIA** | [2](https://github.com/search?q=is%3Apr+is%3Aopen+org%3ANVIDIA+author%3AAkshayShah03&type=pullrequests) | Reproducible seeded prompts in garak, empty trailing slices in Warp |
 | **Anthropic Claude Agent SDK** | [2](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Aanthropics%2Fclaude-agent-sdk-python+author%3AAkshayShah03&type=pullrequests) | A client disconnect race, recursive TypedDict schemas for MCP tools |
+| **microsoft/PyRIT** | [1](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Amicrosoft%2FPyRIT+author%3AAkshayShah03&type=pullrequests) |  |
 | **anthropics/buffa** | [1](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Aanthropics%2Fbuffa+author%3AAkshayShah03&type=pullrequests) |  |
 
 ### Issues and triage
@@ -63,4 +64,4 @@ Google ADK merges through Copybara, so those PRs show as "Closed" on GitHub. The
 | [**streaming-lakehouse-optimizer**](https://github.com/AkshayShah03/streaming-lakehouse-optimizer) | Postgres → Debezium → Kafka → Flink → Iceberg, with a learned layout optimizer |
 | [**incremental-vector-pipeline**](https://github.com/AkshayShah03/incremental-vector-pipeline) | CDC-driven re-embedding of only the chunks that changed, with a versioned store and instant model rollback |
 
-<sub>Updated automatically from GitHub on November 24, 2026.</sub>
+<sub>Updated automatically from GitHub on November 25, 2026.</sub>
