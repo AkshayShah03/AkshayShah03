@@ -6,7 +6,7 @@ I work on AI and data infrastructure, and I spend a lot of my time fixing bugs i
 
 ## Open-source contributions
 
-**16 merged PRs** · **76 under review** · **47 issues filed**, across 11 open-source projects from Google, Apple MLX, AWS, NVIDIA, Tesla, Ollama and Anthropic.
+**16 merged PRs** · **77 under review** · **47 issues filed**, across 11 open-source projects from Google, Apple MLX, AWS, NVIDIA, Tesla, Ollama and Anthropic.
 
 ### Merged
 
@@ -37,7 +37,7 @@ Google ADK merges through Copybara, so those PRs show as "Closed" on GitHub. The
 |---|---|---|
 | **AWS SageMaker Python SDK** | [42](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Aaws%2Fsagemaker-python-sdk+author%3AAkshayShah03&type=pullrequests) | Bugs in the v3 SDK across training, serving, pipelines and core, such as a KMS key sent as a customer encryption key, `mpirun -np` given the wrong rank count, and `AsyncPredictor` hanging instead of timing out |
 | **Ollama** | [10](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Aollama%2Follama+author%3AAkshayShah03&type=pullrequests) | Responses API text dropped next to tool calls, blobs not pruned after pull or copy, a race in blob-download cancellation |
-| **Google ADK** | [6](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Agoogle%2Fadk-docs+repo%3Agoogle%2Fadk-python+author%3AAkshayShah03&type=pullrequests) | Workflow resume replay, keeping finished parallel tool results on abort |
+| **Google ADK** | [7](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Agoogle%2Fadk-docs+repo%3Agoogle%2Fadk-python+author%3AAkshayShah03&type=pullrequests) | Workflow resume replay, keeping finished parallel tool results on abort |
 | **Tesla** | [6](https://github.com/search?q=is%3Apr+is%3Aopen+org%3Ateslamotors+author%3AAkshayShah03&type=pullrequests) | Vehicle wake-up polling, cabin overheat protection level, Kafka client errors, statsd tags, `FixedBitset` construction |
 | **MLX-VLM** | [4](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3ANeywa-Labs%2Fmlx-vlm+author%3AAkshayShah03&type=pullrequests) | Qwen3-VL embedding position IDs, GLM-OCR image input, pooling options |
 | **AWS Strands Agents** | [2](https://github.com/search?q=is%3Apr+is%3Aopen+repo%3Astrands-agents%2Fharness-sdk+author%3AAkshayShah03&type=pullrequests) | Contributor setup docs |
